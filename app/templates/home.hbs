@@ -1,0 +1,13 @@
+<section class="jumbotron home">
+    <h1>Cupcake Delivery & Wedding Cakes, Manchester</h1>
+</section>
+<section class="page-description">
+    <h2> {{ model.title }}</h2>
+    {{#each model.content as |content|}}
+        <div class="content">
+            <h3>{{ content.subheading }}</h3>
+            <p>{{ content.passage }}</p>
+        </div>
+    {{/each}}
+</section>
+{{outlet}}

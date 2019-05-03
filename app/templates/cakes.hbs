@@ -1,0 +1,17 @@
+<section class="jumbotron cakes">
+    <h1>Cupcakes & Birthday Cakes</h1>
+</section>
+<section class="page-description">
+    <h2> {{ model.title }}</h2>
+    <div class="content">
+        <p>{{ model.passage }}</p>
+    </div>
+    <div class="image-wrapper">
+        {{#each model.imageList as |imgSrc|}}
+            <div class="cakes-image">
+                <img src="{{ imgSrc }}" alt="">
+            </div>
+        {{/each}}
+    </div>
+</section>
+{{outlet}}
